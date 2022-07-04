@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>ROBLOX MarketPlace Tax Calculator</h1>
+  
+<input type="text" id="input" name="input"><br><br>
+  
+<button type="button" onclick="calc()">Calculate MarketPlace Tax!</button>
+  
+<b><p id="empty""></p></b>
+
+  
+<script type="text/javascript">
+function calc() {
+let input = document.getElementById("input").value
+document.getElementById('output').innerHTML = Math.floor(0.7 * input) + "R$"
+}
+
+  </script>
+  
+<label id = "output"> 0R$ </label>
+  
+ </body>
+</html>
